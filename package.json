@@ -1,0 +1,18 @@
+{
+  "name": "emaily",
+  "version": "1.0.0",
+  "description": "project files for Stephen Grider's udemy course node with react fullstack web development. Build an email feedback platform. Paid surveys for businesses.",
+  "main": "index.js",
+  "engines": {
+    "node": "8.1.1",
+    "npm": "5.0.3"
+  },
+  "scripts": {
+    "start": "node index.js"
+  },
+  "author": "Graham Hewett",
+  "license": "ISC",
+  "dependencies": {
+    "express": "4.16.4"
+  }
+}
