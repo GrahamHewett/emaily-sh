@@ -9,11 +9,14 @@
   },
   "scripts": {
     "start": "node index.js",
-    "dev": "nodemon index.js"
+    "_server": "nodemon index.js",
+    "_client": "npm run start --prefix client",
+    "dev": "concurrently \"npm run _server\" \"npm run _client\""
   },
   "author": "Graham Hewett",
   "license": "ISC",
   "dependencies": {
+    "concurrently": "4.1.0",
     "cookie-session": "1.3.3",
     "express": "4.16.4",
     "mongoose": "5.4.16",
