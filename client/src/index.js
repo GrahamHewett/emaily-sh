@@ -8,7 +8,7 @@ import App from "./App";
 import reducers from './reducers';
 import * as serviceWorker from "./serviceWorker";
 
-const store = createStore((reducers) => [], {}, applyMiddleware());
+const store = createStore(reducers, {}, applyMiddleware());
 
 ReactDOM.render(
   <Provider store={store}>
