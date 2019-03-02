@@ -1,10 +1,8 @@
-import 'materialize-css/dist/css/materialize.min.css'
+import "materialize-css/dist/css/materialize.min.css";
 import React, { Component } from "react";
 import { BrowserRouter as Router, Route } from "react-router-dom";
 
-import "./App.css";
-
-import Header from './Header'
+import Header from "./Header";
 const Dashboard = () => <h2>Dashboard</h2>;
 const SurveyNew = () => <h2>New Survey</h2>;
 const Landing = () => <h2>Landing</h2>;
@@ -12,7 +10,7 @@ const Landing = () => <h2>Landing</h2>;
 class App extends Component {
   render() {
     return (
-      <div className="App">
+      <div className="container">
         <Router>
           <>
             <Header />
